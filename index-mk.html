@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="stylesheet" href="./styles/media-queries.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image" href="./images/logos/Skyline logo.png">
+  <script src="./scripts/script.js" defer></script>
+  <title>Skyline Dronography</title>
+</head>
+
+<body class="no-scroll">
+  <section id="section-one">
+    <header id="site-header">
+      <div id="logo">
+        <a href="#top"><img id="logo-image" src="./images/logos/Skyline logo.png" alt="Skyline Logo" /></a>
+      </div>
+      <div class="menu-wrap">
+        <div class="language-menu">
+          <nav>
+            <div class="selected-language">
+              <img width="28px" height="15px" src="./images/logos/macedonian-flag-small.png" alt="" />
+              MK
+            </div>
+            <ul class="lang-ul">
+              <li class="lang-li">
+                <a class="lang-a" href="index.html">
+                  <img class="lang-img" width="28px" height="15px" src="./images/logos/united-states.png"
+                    alt="" />EN</a>
+              </li>
+              <li class="lang-li">
+                <a class="lang-a" href="index-mk.html">
+                  <img class="lang-img" width="28px" height="15px" src="./images/logos/macedonian-flag-small.png"
+                    alt="" />MK</a>
+              </li>
+            </ul>
+          </nav>
+          <input type="checkbox" class="toggler" />
+          <div class="hamburger">
+            <div></div>
+          </div>
+          <div class="menu">
+            <div>
+              <div>
+                <ul>
+                  <li><a href="#">Насловна</a></li>
+                  <li><a href="#about-text">За нас</a></li>
+                  <li><a href="#service-cards">Услуги</a></li>
+                  <li>
+                    <a href="video-gallery-mk.html" target="_blank">
+                      Видео глаерија
+                    </a>
+                  </li>
+                  <li><a href="#section-six-contact-form">Контакт</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="outer-container text-center" id="top-video">
+      <div class="inner-container">
+        <div class="video-overlay">
+          <h1>Беспилотни летала достапни низ целата држава</h1>
+          <i>
+            <h6>Лиценциран оператор на беспилотни летала</h6>
+          </i>
+        </div>
+        <video id="player" src="./videos/Skyline Dronography.mp4" autoplay muted loop></video>
+      </div>
+    </div>
+  </section>
+
+  <section id="section-two-company-description">
+    <div id="about-section">
+      <div id="about-text" class="about">
+        <p>
+          <span class="skyline">Skyline Dronography</span> е продукција која
+          нуди изработка на поинакви воздушни видеа и фотографии по нарачка
+          скроени според вашите потреби.
+        </p>
+        <span class="button-roll-animation" id="deploy-drone-mk">
+          <a class="button-roll-animation-anchor" id="deploy-drone-anchor" href="#section-six-contact-form"></a></span>
+      </div>
+      <div id="about-image" class="about">
+        <img src="./images/drone-training-banner-commercial.jpg" alt="Drone Pilot" />
+      </div>
+    </div>
+  </section>
+  <section id="section-three-services">
+    <h2>Дрон Услуги</h2>
+    <div id="service-cards">
+      <div class="services">
+        <img src="./images/services/real estate.jpg" alt="" />
+        <h3>Недвижнини</h3>
+        <p>станбени и комерцијални - продажба, фотографии, видео</p>
+      </div>
+      <div class="services">
+        <img src="images/services/construction.jpg" alt="" />
+        <h3>Изградба</h3>
+        <p>следење на процесот, рекламни видеа</p>
+      </div>
+      <div class="services">
+        <img src="./images/services/hotel.jpg" alt="" />
+        <h3>Туризам</h3>
+        <p>ресорти, атракции, дестинации, маркетинг</p>
+      </div>
+      <div class="services">
+        <img src="./images/services/wedding.jpg" alt="" />
+        <h3>Настани, Свадби</h3>
+        <p>свадби на отворено, спортски и корпоративни настани</p>
+      </div>
+      <div class="services">
+        <img src="./images/services/music.jpg" alt="" />
+        <h3>Музички спотови</h3>
+        <p>најми воздушна камера</p>
+      </div>
+      <div class="services">
+        <img src="./images/services/custom.jpg" alt="" />
+        <h3>Прилагодени видеа</h3>
+        <p>прилагодени според потребите на клиентите</p>
+      </div>
+    </div>
+  </section>
+  <section id="section-four-video-gallery">
+    <h2>Дел од моите проекти</h2>
+    <div id="gallery-container">
+      <video id="gallery-video" src="./videos/DDS Time Lapse short.mp4" autoplay muted loop></video>
+      <div id="check-video-gallery-container">
+        <span class="button-roll-animation">
+          <a class="button-roll-animation-anchor" id="video-gallery-anchor-mk" href="video-gallery-mk.html"
+            target="_blank">
+          </a></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="section-five-photo-gallery">
+    <h2>Воздушна фотографија</h2>
+    <div class="carousel-container">
+      <img id="prevBtn" src="./images/logos/left-arrow-6404.svg" alt="" />
+      <img id="nextBtn" src="./images/logos/right-arrow-6405.svg" alt="" />
+      <div class="carousel-slide">
+        <img src="./images/aerial photography slider/DJI_0918-Edit.jpg" id="lastClone" alt="" />
+        <img src="./images/aerial photography slider/Aerial Church Shot.jpg" alt="" />
+        <img src="./images/aerial photography slider/Crkva.jpg" alt="" />
+        <img src="./images/aerial photography slider/DJI_0004.jpg" alt="" />
+        <img src="./images/aerial photography slider/DJI_0024.jpg" alt="" />
+        <img src="./images/aerial photography slider/DJI_0026.jpg" alt="" />
+        <img src="./images/aerial photography slider/DJI_0032-Edit.jpg" alt="" />
+        <img src="./images/aerial photography slider/DJI_0037.jpg" alt="" />
+        <img src="./images/aerial photography slider/DJI_0063-2.jpg" alt="" />
+        <img src="./images/aerial photography slider/DJI_0080.jpg" alt="" />
+        <img src="./images/aerial photography slider/DJI_0102.jpg" alt="" />
+        <img src="./images/aerial photography slider/DJI_0112.jpg" alt="" />
+        <img src="./images/aerial photography slider/DJI_0143-Edit.jpg" alt="" />
+        <img src="./images/aerial photography slider/DJI_0627.jpg" alt="" />
+        <img src="./images/aerial photography slider/DJI_0708.jpg" alt="" />
+        <img src="./images/aerial photography slider/DJI_0918-Edit.jpg" alt="" />
+        <img src="./images/aerial photography slider/Aerial Church Shot.jpg" id="firstClone" alt="" />
+      </div>
+    </div>
+  </section>
+  <section id="section-six-contact-form">
+    <div class="inner-content-form">
+      <article>
+        <div class="contact-form-heder">
+          <h2>Прати ми порака!</h2>
+          <p>Имате прашање, предлог или идеја? Пратете ми пораче!</p>
+        </div>
+      </article>
+
+      <form id="contact-form" action="https://formsubmit.co/bojanspasovski1@gmail.com" method="POST">
+        <div class="form-row">
+          <input type="hidden" name="_next"
+            value="https://bojan-spasovski.github.io/bojan-spasovski-website/thank-you-mk" />
+          <input type="hidden" name="_captcha" value="false" />
+          <div class="input-group">
+            <label class="custom-field" for="user-name-input">
+              <input type="text" name="user-name" id="user-name-input" required />
+              <span class="placeholder">Внесете го вашето име</span>
+            </label>
+          </div>
+          <div class="input-group">
+            <label class="custom-field" for="useremail">
+              <input type="email" name="user-email" id="useremail" required />
+              <span class="placeholder">Внесете го вашиот е-маил</span>
+            </label>
+            <input type="hidden" name="_subject" value="New Email Landing Page" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div id="text-area">
+            <label class="message-area" for="usermessage">Вашата порака..</label>
+            <textarea name="user-message" id="usermessage" cols="20" rows="7" minlength="5" maxlength="1000"
+              placeholder="Предлог, идеја, ценовник?" required></textarea>
+          </div>
+        </div>
+        <div id="submit-button-container">
+          <button id="submit-button"><span>Праќај</span></button>
+        </div>
+      </form>
+    </div>
+    </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="inner-content-footer">
+      <hr />
+      <div class="footer-bottom">
+        <span>Бојан Спасовски <span id="currentYear"></span></span>
+        <div class="footer-images">
+          <a href="https://www.linkedin.com/in/b-spasovski/" target="_blank">
+            <img src="./images/logos/icons8-linkedin-64.svg" alt="Linkedin Logo" /></a>
+          <a href="mailto:bojanspasovski1@gmail.com" target="_blank">
+            <img src="./images/logos/icons8-mail-48.png" alt="Mail Envelope" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

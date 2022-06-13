@@ -1,0 +1,107 @@
+body {
+  font-family: "Titillium Web", sans-serif;
+  background-color: rgba(139, 139, 139, 0.8);
+}
+
+@media (min-width: 250px) {
+  .thank-you-main {
+    font-size: 1.45rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+    margin: 55px auto 55px auto;
+  }
+
+  .satellite-image img {
+    height: auto;
+    margin: 2rem auto 2rem auto;
+    width: 60%;
+  }
+}
+
+@media (min-width: 600px) {
+  .satellite-image img {
+    height: auto;
+    margin: 2rem auto 2rem auto;
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .satellite-image img {
+    height: auto;
+    margin: 2rem auto 2rem auto;
+    width: 40%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .satellite-image img {
+    height: auto;
+    margin: 2rem auto 2rem auto;
+    width: 20%;
+  }
+}
+
+/*=================================*/
+
+/*Button Styles*/
+.button-roll-animation {
+  position: relative;
+  display: inline-flex;
+  width: 10rem;
+  height: 55px;
+  margin: 15px;
+  perspective: 1000px;
+}
+.button-roll-animation .button-roll-animation-anchor {
+  font-size: 15px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform 0.25s;
+  font-family: "Montserrat", sans-serif;
+}
+.button-roll-animation #fly-home:before,
+.button-roll-animation #fly-home:after {
+  position: absolute;
+  content: "Fly Home";
+  height: 53px;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/*MK*/
+.button-roll-animation #fly-home-mk:before,
+.button-roll-animation #fly-home-mk:after {
+  position: absolute;
+  content: "Летај накај дома";
+  height: 53px;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+/**/
+.button-roll-animation .button-roll-animation-anchor:before {
+  color: rgb(0, 0, 0);
+  background: rgb(188, 253, 76);
+  transform: rotateY(0deg) translateZ(25px);
+}
+.button-roll-animation .button-roll-animation-anchor:after {
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+.button-roll-animation .button-roll-animation-anchor:hover {
+  transform: translateZ(-25px) rotateX(-89.5deg);
+}
+/*================================*/

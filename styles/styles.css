@@ -1,0 +1,53 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/*Backgrounds*/
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*Button Styles*/
+
+/* button {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+  width: 10rem;
+  padding: 0.3rem 0.9rem 0.3rem 0.9rem;
+  background-color: rgb(188, 253, 76);
+  cursor: pointer;
+  border-radius: 20px;
+  border-width: 1px;
+  border-style: solid;
+  transition: 0.5s ease-out;
+}
+
+button:hover {
+  width: 10rem;
+} */
+
+/*Fonts*/
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 0.9rem;
+}
+
+#about-text p {
+  font-size: 1.1rem;
+}
