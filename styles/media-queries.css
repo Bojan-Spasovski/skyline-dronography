@@ -283,12 +283,21 @@
   .video-overlay {
     position: absolute;
     width: 100%;
+    height: 50%;
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
     font-family: "calibri";
     color: #fff;
     background-color: rgba(32, 32, 32, 0.5);
+  }
+
+  .video-overlay h1 {
+    font-size: 1.3rem;
+  }
+
+  .video-overlay h6 {
+    font-size: 0.5rem;
   }
 
   .video-overlay h1,
@@ -630,7 +639,75 @@
     text-align: center;
   }
 
-  .carousel-container {
+  .carousel {
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+    z-index: 0;
+  }
+
+  .carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+    transition-delay: 200ms;
+  }
+
+  .slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+  }
+
+  .carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    border-radius: 0.25rem;
+    padding: 0 0.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .carousel-button:hover,
+  .carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .carousel-button:focus {
+    outline: 1px solid black;
+  }
+
+  .carousel-button.prev {
+    left: 1rem;
+  }
+
+  .carousel-button.next {
+    right: 1rem;
+  }
+
+  /* .carousel-container {
     width: 100%;
     position: relative;
     margin: auto;
@@ -678,7 +755,7 @@
     right: 5%;
     color: black;
     cursor: pointer;
-  }
+  } */
 
   /*===== Section 4 Form =====*/
 
@@ -897,6 +974,24 @@
   }
 }
 
+/*=====================================BREAKPOINT===========================================================*/
+
+@media screen and (min-width: 340px) {
+  .video-overlay {
+    height: auto;
+  }
+
+  .video-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .video-overlay h6 {
+    font-size: 0.9rem;
+  }
+}
+
+/*=====================================BREAKPOINT===========================================================*/
+
 @media screen and (min-width: 600px) {
   /*Services*/
   .services-img {
@@ -913,6 +1008,16 @@
     width: 25%;
   }
 
+  /*Carousel*/
+
+  .carousel {
+    height: 60vh;
+  }
+
+  .carousel-button {
+    font-size: 3rem;
+  }
+
   /*Form*/
 
   .form-row {
@@ -926,6 +1031,8 @@
     width: 500px;
   }
 }
+
+/*=====================================BREAKPOINT===========================================================*/
 
 @media screen and (min-width: 768px) {
   /*==Fonts==*/
@@ -953,10 +1060,15 @@
     width: 4rem;
   }
 
-  .carousel-container {
+  .carousel {
+    margin: 0 auto 0 auto;
+    width: 100vw;
+    height: 80vh;
     width: 60%;
   }
 }
+
+/*=====================================BREAKPOINT===========================================================*/
 
 @media screen and (min-width: 1024px) {
   /*==Fonts==*/
@@ -1014,4 +1126,22 @@
     width: 35%;
     margin: 2rem auto 1rem auto;
   }
+}
+
+@media screen and (min-width: 2000px) {
+  .video-overlay {
+    height: 50vh;
+  }
+  /*==Fonts==*/
+
+  .video-overlay h1 {
+    margin-top: 150px;
+    font-size: 3.7rem;
+  }
+
+  .video-overlay h6 {
+    font-size: 2rem;
+  }
+
+  /*================*/
 }

@@ -12,51 +12,26 @@ window.onscroll = function () {
 //===============================================================//
 
 // === Carousel Logic === //
+const buttons = document.querySelectorAll("[data-carousel-button]");
 
-const carouselSlide = document.querySelector(".carousel-slide");
-const carouselImages = document.querySelectorAll(".carousel-slide img");
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const offset = button.dataset.carouselButton === "next" ? 1 : -1;
+    const slides = button
+      .closest("[data-carousel]")
+      .querySelector("[data-slides]");
 
-// Buttons
+    const activeSlide = slides.querySelector("[data-active]");
+    let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+    if (newIndex < 0) newIndex = slides.children.length - 1;
+    if (newIndex >= slides.children.length) newIndex = 0;
 
-const prevBtn = document.getElementById("prevBtn");
-const nextBtn = document.getElementById("nextBtn");
-
-// Counter
-
-let counter = 1;
-const size = carouselImages[0].clientWidth; // Getting image size
-
-carouselSlide.style.transform = `translateX(` + -size * counter + `px)`;
-
-// Button Listeners
-
-nextBtn.addEventListener("click", () => {
-  if (counter >= carouselImages.length - 1) return;
-  carouselSlide.style.transition = "transform 0.4s ease-in-out";
-  counter++;
-  carouselSlide.style.transform = `translateX(` + -size * counter + `px)`;
+    slides.children[newIndex].dataset.active = true;
+    delete activeSlide.dataset.active;
+  });
 });
 
-prevBtn.addEventListener("click", () => {
-  if (counter <= 0) return;
-  carouselSlide.style.transition = "transform 0.4s ease-in-out";
-  counter--;
-  carouselSlide.style.transform = `translateX(` + -size * counter + `px)`;
-});
-
-carouselSlide.addEventListener("transitionend", () => {
-  if (carouselImages[counter].id === "lastClone") {
-    carouselSlide.style.transition = "none";
-    counter = carouselImages.length - 2;
-    carouselSlide.style.transform = `translateX(` + -size * counter + `px)`;
-  }
-
-  if (carouselImages[counter].id === "firstClone") {
-    carouselSlide.style.transition = "none";
-    counter = carouselImages.length - counter;
-    carouselSlide.style.transform = `translateX(` + -size * counter + `px)`;
-  }
-});
+// 
 
 //==============================================================================//
 // === Prevent Scroll === //
@@ -92,5 +67,4 @@ let year = date.getFullYear();
 document.getElementById("currentYear").innerHTML = year;
 
 //===============================================================================//
-
 

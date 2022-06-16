@@ -11,23 +11,6 @@ body {
 
 /*Button Styles*/
 
-/* button {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 900;
-  width: 10rem;
-  padding: 0.3rem 0.9rem 0.3rem 0.9rem;
-  background-color: rgb(188, 253, 76);
-  cursor: pointer;
-  border-radius: 20px;
-  border-width: 1px;
-  border-style: solid;
-  transition: 0.5s ease-out;
-}
-
-button:hover {
-  width: 10rem;
-} */
-
 /*Fonts*/
 
 h1 {
