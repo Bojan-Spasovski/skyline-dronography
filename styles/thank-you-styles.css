@@ -1,6 +1,5 @@
 body {
   font-family: "Titillium Web", sans-serif;
-  background-color: rgba(139, 139, 139, 0.8);
 }
 
 @media (min-width: 250px) {
@@ -87,14 +86,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid black;
+  border: 2.7px solid black;
   box-sizing: border-box;
   border-radius: 10px;
 }
 /**/
 .button-roll-animation .button-roll-animation-anchor:before {
-  color: rgb(0, 0, 0);
-  background: rgb(188, 253, 76);
+  color: rgb(255, 255, 255);
+  background: rgb(37, 106, 185);
   transform: rotateY(0deg) translateZ(25px);
 }
 .button-roll-animation .button-roll-animation-anchor:after {
